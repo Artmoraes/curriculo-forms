@@ -1,0 +1,81 @@
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <fieldset id="field-set1">
+            <h1>Formulário</h1>
+            <form action="" method="get">
+                <label for="nome-completo">Nome Completo: 
+                    <input type="text" required name="nome" id="input-nome" placeholder="Digite seu nome" autofocus maxlength=40>
+                </label>
+                <br>
+                <br>
+                <label for="email">Email: 
+                    <input type="email" required name="email" id="input-email" placeholder="Digite seu Email" maxlength=50>
+                </label>
+                <br>
+                <br>
+                <label for="cpf">CPF: 
+                <input type="text" required name="cpf" id="input-cpf" placeholder="Digite seu CPF" maxlength=11>
+                </label>
+                <br>
+                <br>
+                <label for="endereço">Endereço: 
+                <input type="text" required name="endereço" id="input-endereço" placeholder="Digite seu endereço" maxlength=200>
+                </label>
+                <br>
+                <br>
+                <label for="cidade">Cidade: 
+                <input type="text" required name="cidade" id="input-cidade" placeholder="Digite sua cidade" maxlength=28>
+                </label>
+                <br>
+                <br>
+                <label for="">Estado: 
+                    <select name="estado" id="input-estado">
+                        <option value="selecionar" selected>Selecione o Estado</option>
+                        <option value="pe">Pernambuco</option>                        
+                        <option value="ma">Maranhão</option>                        
+                    </select>
+                </label>
+                <br>
+                <br>
+                <p>Selecione seu modelo de residência:</p>
+                <label for="casa">
+                <input type="Radio" id="input-casa" name="select-moradia" value="Casa">Casa
+                </label>
+                <label for="apartamento">
+                <input type="Radio" id="input-apartamento" name="select-moradia" value="Apartamento">Apartamento
+                </label>
+            </form>
+        </fieldset>
+        <fieldset id="field-set2">
+            <p>Resumo Currículo:</p>
+            <textArea required name="resumo-curriculo" id="resumo-curriculo" placeholder="Digite seu resumo do curriculo" cols="30" rows="10" maxlength=1000></textArea>
+            <br>
+            <br>
+            <label for="cargo">Cargo: 
+                <input type="text" required name="cargo" id="input-cargo" placeholder="Digite seu Cargo" maxlength=40>
+            </label>
+            <br>
+            <br>
+            <label for="descricao-cargo">Descrição do Cargo: 
+                <input type="text" required name="descricao-cargo" id="descricao-cargo" placeholder="Digite uma descrição do seu cargo" maxlength=500>
+            </label>
+            <br>
+            <br>
+            <label for="data-inicio">Data de início:
+                <input type="date" required name="data-inicio" id="data-inicio" placeholder="Digite sua data de início" maxlength=8 >
+            </label>
+        </fieldset>
+    </main>
+</body>
+
+</html>
